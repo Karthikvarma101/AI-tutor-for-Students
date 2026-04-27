@@ -1,0 +1,88 @@
+export const SUBJECTS = [
+  { id: 'math',      label: 'Mathematics',     icon: '🔢', color: '#6C63FF' },
+  { id: 'physics',   label: 'Physics',          icon: '⚛️', color: '#FF6584' },
+  { id: 'chemistry', label: 'Chemistry',        icon: '🧪', color: '#43C59E' },
+  { id: 'biology',   label: 'Biology',          icon: '🧬', color: '#F7B731' },
+  { id: 'cs',        label: 'Computer Science', icon: '💻', color: '#4FC3F7' },
+  { id: 'english',   label: 'English',          icon: '📖', color: '#FF8C42' },
+  { id: 'history',   label: 'History',          icon: '🏛️', color: '#A29BFE' },
+  { id: 'geography', label: 'Geography',        icon: '🌍', color: '#55EFC4' },
+];
+
+export const SUBJECT_KEYWORDS = {
+  math:      ['math','algebra','geometry','calculus','equation','number','arithmetic','triangle','circle','derivative','integral','matrix','vector','probability','statistics','polynomial','fraction','decimal','angle','quadratic'],
+  physics:   ['physics','force','motion','velocity','acceleration','newton','gravity','energy','wave','light','optics','electricity','magnetic','quantum','thermodynamics','pressure','density','momentum','power','work'],
+  chemistry: ['chemistry','atom','molecule','element','compound','reaction','acid','base','ph','bond','periodic','electron','proton','neutron','organic','inorganic','valence','oxidation','reduction','titration'],
+  biology:   ['biology','cell','dna','rna','gene','chromosome','evolution','photosynthesis','respiration','organism','plant','animal','enzyme','protein','mitosis','meiosis','bacteria','virus','ecology','nutrition'],
+  cs:        ['computer','programming','algorithm','data structure','code','software','hardware','network','database','binary','array','stack','queue','python','java','javascript','html','css','loop','function','variable'],
+  english:   ['english','grammar','noun','verb','adjective','tense','vocabulary','poem','essay','literature','sentence','paragraph','pronoun','preposition','synonym','antonym','metaphor','simile','narrative','comprehension'],
+  history:   ['history','war','revolution','empire','dynasty','ancient','medieval','civilization','colonial','independence','treaty','king','queen','battle','century','culture','democracy','monarchy','republic','world war'],
+  geography: ['geography','continent','country','capital','river','mountain','ocean','climate','latitude','longitude','map','terrain','population','desert','forest','tectonic','erosion','atmosphere','rainfall','biome'],
+};
+
+export const DAILY_QUIZ_BANK = {
+  math: [
+    { question: 'What is the value of π (pi) to 2 decimal places?', options: ['3.12','3.14','3.16','3.18'], correct: 1, explanation: 'π ≈ 3.14159..., rounded to 2 decimal places = 3.14' },
+    { question: 'What is the square root of 144?', options: ['10','11','12','13'], correct: 2, explanation: '12 × 12 = 144' },
+    { question: 'What is 25% of 200?', options: ['25','40','50','75'], correct: 2, explanation: '25% × 200 = 0.25 × 200 = 50' },
+    { question: 'What is the area of a circle with radius 7? (π=22/7)', options: ['144','154','164','174'], correct: 1, explanation: 'Area = πr² = (22/7)×49 = 154' },
+    { question: 'Solve: 2³ × 2² = ?', options: ['16','32','64','128'], correct: 1, explanation: '2³ × 2² = 2^(3+2) = 2⁵ = 32' },
+    { question: 'What is the LCM of 4 and 6?', options: ['8','12','18','24'], correct: 1, explanation: 'LCM(4,6) = 12' },
+  ],
+  physics: [
+    { question: 'What is the speed of light in vacuum?', options: ['3×10⁸ m/s','3×10⁶ m/s','3×10¹⁰ m/s','3×10⁴ m/s'], correct: 0, explanation: 'Speed of light c = 3×10⁸ m/s' },
+    { question: 'What type of energy does a moving object have?', options: ['Potential','Thermal','Kinetic','Chemical'], correct: 2, explanation: 'Kinetic energy is the energy of motion (KE = ½mv²)' },
+    { question: 'What is the SI unit of force?', options: ['Watt','Joule','Newton','Pascal'], correct: 2, explanation: 'The Newton (N) is the SI unit of force' },
+    { question: 'What happens to resistance when temperature increases for metals?', options: ['Decreases','Increases','Stays same','Becomes zero'], correct: 1, explanation: 'In metals, resistance increases with temperature' },
+    { question: "Which law explains why a book stays at rest on a table?", options: ["Newton's 1st","Newton's 2nd","Newton's 3rd","Ohm's Law"], correct: 0, explanation: "Newton's 1st law (Inertia): an object at rest stays at rest" },
+    { question: 'Acceleration due to gravity on Earth is approximately?', options: ['9.8 m/s²','8.9 m/s²','10.8 m/s²','6.7 m/s²'], correct: 0, explanation: 'g ≈ 9.8 m/s² or approximately 10 m/s² for calculations' },
+  ],
+  chemistry: [
+    { question: 'What is the atomic number of Carbon?', options: ['4','6','8','12'], correct: 1, explanation: 'Carbon has 6 protons, so its atomic number is 6' },
+    { question: 'What is the pH of pure water?', options: ['0','5','7','14'], correct: 2, explanation: 'Pure water is neutral with pH = 7' },
+    { question: 'Which gas is produced when metals react with acids?', options: ['Oxygen','Nitrogen','Carbon dioxide','Hydrogen'], correct: 3, explanation: 'Metals + Acids → Salt + Hydrogen gas' },
+    { question: 'What is the chemical formula for table salt?', options: ['NaCl','KCl','CaCl₂','MgCl₂'], correct: 0, explanation: 'Table salt is Sodium Chloride (NaCl)' },
+    { question: 'Which type of bond is formed by sharing electrons?', options: ['Ionic','Covalent','Metallic','Hydrogen'], correct: 1, explanation: 'Covalent bonds form when atoms share electron pairs' },
+    { question: 'What is the valency of Oxygen?', options: ['1','2','3','4'], correct: 1, explanation: 'Oxygen has a valency of 2 (needs 2 electrons to complete its shell)' },
+  ],
+  biology: [
+    { question: 'What is the powerhouse of the cell?', options: ['Nucleus','Ribosome','Mitochondria','Golgi body'], correct: 2, explanation: 'Mitochondria produce ATP, the cell\'s energy currency' },
+    { question: 'How many chromosomes do humans have?', options: ['23','46','48','44'], correct: 1, explanation: 'Humans have 46 chromosomes (23 pairs)' },
+    { question: 'Which blood group is the universal donor?', options: ['A','B','AB','O'], correct: 3, explanation: 'Blood group O negative is the universal donor' },
+    { question: 'What is the process by which plants make food?', options: ['Respiration','Digestion','Photosynthesis','Transpiration'], correct: 2, explanation: 'Photosynthesis converts CO₂ + H₂O + sunlight → glucose + O₂' },
+    { question: 'DNA stands for?', options: ['Deoxyribonucleic Acid','Dynamic Nucleic Acid','Deoxyribose Nitrogen Acid','None'], correct: 0, explanation: 'DNA = Deoxyribonucleic Acid, the genetic material' },
+    { question: 'Which organ produces insulin?', options: ['Liver','Kidney','Pancreas','Heart'], correct: 2, explanation: 'The pancreas produces insulin to regulate blood sugar' },
+  ],
+  cs: [
+    { question: 'What does CPU stand for?', options: ['Central Processing Unit','Computer Personal Unit','Control Processing Unit','Core Processing Unit'], correct: 0, explanation: 'CPU = Central Processing Unit, the brain of a computer' },
+    { question: 'Which data structure uses LIFO principle?', options: ['Queue','Stack','Array','Tree'], correct: 1, explanation: 'Stack uses Last In, First Out (LIFO) — like a stack of plates' },
+    { question: 'What is the binary representation of decimal 10?', options: ['1010','1001','1100','0110'], correct: 0, explanation: '10 = 8+2 = 2³+2¹ = 1010 in binary' },
+    { question: 'Which language is considered the "mother of all languages"?', options: ['C++','Java','C','Assembly'], correct: 2, explanation: 'C is considered the mother of many modern programming languages' },
+    { question: 'What does HTML stand for?', options: ['Hyper Text Markup Language','High Text Markup Language','Hyper Transfer Markup Language','None'], correct: 0, explanation: 'HTML = HyperText Markup Language, used to structure web pages' },
+    { question: 'What is the time complexity of binary search?', options: ['O(n)','O(n²)','O(log n)','O(1)'], correct: 2, explanation: 'Binary search halves the search space each step, giving O(log n) complexity' },
+  ],
+  english: [
+    { question: 'What is a synonym for "happy"?', options: ['Sad','Joyful','Angry','Tired'], correct: 1, explanation: 'Joyful is a synonym (same meaning) for happy' },
+    { question: 'Which of the following is a noun?', options: ['Run','Beautiful','Happiness','Quickly'], correct: 2, explanation: 'Happiness is a noun (abstract). Run is a verb, Beautiful is adjective, Quickly is adverb' },
+    { question: 'What is the plural of "child"?', options: ['Childs','Childes','Children','Childrens'], correct: 2, explanation: 'Children is the irregular plural of child' },
+    { question: 'Which tense is used: "She has eaten"?', options: ['Simple Past','Present Perfect','Past Perfect','Future'], correct: 1, explanation: 'Present Perfect tense uses "has/have + past participle"' },
+    { question: 'What figure of speech is "as brave as a lion"?', options: ['Metaphor','Simile','Alliteration','Hyperbole'], correct: 1, explanation: 'Simile compares using "as...as" or "like"' },
+    { question: 'What is the antonym of "ancient"?', options: ['Old','Historic','Modern','Classic'], correct: 2, explanation: 'Modern (new/recent) is the antonym of ancient (old)' },
+  ],
+  history: [
+    { question: 'When did World War II end?', options: ['1943','1944','1945','1946'], correct: 2, explanation: 'WWII ended in 1945 with Germany surrendering in May and Japan in September' },
+    { question: 'Who was the first President of the USA?', options: ['Abraham Lincoln','Thomas Jefferson','George Washington','John Adams'], correct: 2, explanation: 'George Washington served as the first US President (1789–1797)' },
+    { question: 'In which year did India gain independence?', options: ['1945','1946','1947','1948'], correct: 2, explanation: 'India gained independence from British rule on August 15, 1947' },
+    { question: 'Who built the Taj Mahal?', options: ['Akbar','Shah Jahan','Humayun','Aurangzeb'], correct: 1, explanation: 'Shah Jahan built the Taj Mahal in memory of his wife Mumtaz Mahal' },
+    { question: 'The French Revolution began in which year?', options: ['1776','1789','1804','1815'], correct: 1, explanation: 'The French Revolution began in 1789 with the storming of the Bastille' },
+    { question: 'Who proposed the theory of evolution by natural selection?', options: ['Isaac Newton','Charles Darwin','Gregor Mendel','Albert Einstein'], correct: 1, explanation: 'Charles Darwin proposed evolution by natural selection in "On the Origin of Species" (1859)' },
+  ],
+  geography: [
+    { question: 'What is the largest continent?', options: ['Africa','Europe','Asia','Australia'], correct: 2, explanation: 'Asia is the largest continent by both area and population' },
+    { question: 'Which is the longest river in the world?', options: ['Amazon','Nile','Yangtze','Mississippi'], correct: 1, explanation: 'The Nile in Africa is traditionally considered the world\'s longest river' },
+    { question: 'What is the capital of Australia?', options: ['Sydney','Melbourne','Canberra','Brisbane'], correct: 2, explanation: 'Canberra is the capital of Australia (not Sydney)' },
+    { question: 'Which is the smallest country in the world?', options: ['Monaco','San Marino','Vatican City','Liechtenstein'], correct: 2, explanation: 'Vatican City (0.44 km²) is the smallest country in the world' },
+    { question: 'Mount Everest is located in which mountain range?', options: ['Andes','Alps','Rockies','Himalayas'], correct: 3, explanation: 'Mount Everest is in the Himalayas on the border of Nepal and Tibet' },
+    { question: 'Which ocean is the largest?', options: ['Atlantic','Indian','Arctic','Pacific'], correct: 3, explanation: 'The Pacific Ocean is the largest, covering about 165 million km²' },
+  ],
+};
